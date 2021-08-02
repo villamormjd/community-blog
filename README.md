@@ -33,7 +33,7 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
+Open [http://localhost:8000/api/posts/](http://localhost:8000/api/posts/) to view it in the browser.
 
 ### Pre-populate data into Database
 ```
