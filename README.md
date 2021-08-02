@@ -39,6 +39,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 ```
 python manage.py loaddata sample-data.json
 ```
+* Signup for a new user, and login. This way you can see the pre-populated Posts and comments. You can create a new post and/or comment to existing posts.
 
 
 ### Available  Endpoints
