@@ -35,6 +35,11 @@ python manage.py runserver
 ```
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
+### Pre-populate data into Database
+```
+python manage.py loaddata sample-data.json
+```
+
 
 ### Available  Endpoints
 * User Endpoints
