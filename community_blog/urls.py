@@ -12,12 +12,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('users.urls')),
     path('api/', include(router.urls)),
-    path('api/posts/delete/<int:pk>', views.DeletePostDetail.as_view(), name='delete-post'),
+    path('api/posts/delete/<int:pk>/', views.DeletePostDetail.as_view(), name='delete-post'),
     path('api/me/posts/', views.ListLoggedInUserView.as_view(), name='list-user-post'),
 
     # comments
     path('api/posts/<int:blog_id>/comments/', views.CommentListView.as_view(), name='comment'),
-    path('api/posts/<int:blog_id>/comments/<int:pk>', views.CommentDetailView.as_view(), name='comment'),
+    path('api/posts/<int:blog_id>/comments/<int:pk>/', views.CommentDetailView.as_view(), name='comment'),
 
     # jwt
     path('api/gettoken/', TokenObtainPairView.as_view(), name='gettoken'),
